@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="Day14_AutoLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="RNo-5x-Z8h">
+                    <rect key="frame" x="127" y="262" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="RNo-5x-Z8h" secondAttribute="height" multiplier="160:160" id="ZuV-9T-KQ4"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footer" translatesAutoresizingMaskIntoConstraints="NO" id="jNV-2W-FO9">
+                    <rect key="frame" x="0.0" y="454.33333333333326" width="414" height="281.66666666666674"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jNV-2W-FO9" secondAttribute="height" multiplier="375:255" id="w1d-Th-cda"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RNo-5x-Z8h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2fP-zz-ZCu"/>
+                <constraint firstAttribute="bottom" secondItem="jNV-2W-FO9" secondAttribute="bottom" id="8as-4h-KfL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jNV-2W-FO9" secondAttribute="trailing" id="dbT-A7-x9c"/>
+                <constraint firstItem="RNo-5x-Z8h" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-26" id="kXh-Gm-bxp"/>
+                <constraint firstItem="jNV-2W-FO9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pMV-Ts-UZq"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="126"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="footer" width="375" height="255"/>
+        <image name="logo" width="160" height="160"/>
+    </resources>
+</document>
